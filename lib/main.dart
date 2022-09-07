@@ -46,7 +46,7 @@ class HomeWidget extends StatelessWidget {
       child: Column(
         children: [
           Expanded(
-            flex: 4,
+            flex: 5,
             child: SizedBox(
               width: size.width,
               child: Align(
@@ -66,18 +66,21 @@ class HomeWidget extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: 5,
             child: SizedBox(
               width: size.width,
               child: Column(
                 children: const [
-                  Text(
-                    '''By Tapping Create Account or Sign In, you agree to our Terms. Learn how we process your data in our   Privacy Policy and Cookies Police.''',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Montserrat_Black',
-                        fontWeight: FontWeight.w200),
+                  Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: Text(
+                      '''By Tapping Create Account or Sign In, you agree to our Terms. Learn how we process your data in our   Privacy Policy and Cookies Police.''',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Montserrat_Black',
+                          fontWeight: FontWeight.w200),
+                    ),
                   ),
                   SizedBox(
                     height: 15,
